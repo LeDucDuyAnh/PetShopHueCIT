@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chó cảnh</title>
+    <script src="./vendo/fontawesome/js/all.js"></script>
+    <link rel="stylesheet" href="css/sanpham.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="/HueCIT/images/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+    <div id="main">
+        <!----Header---->
+        <div id="header">
+            <div class="list">
+                <button class="menu-header">
+                    <i class='bx bx-menu' onclick="myMenuFunction()"></i>
+                </button>
+                <div class="header-logo">
+                    <a href="index.html"><img width="150" height="50" src="http://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/logo-dogcat-blue.png" alt="dogcatshop"></a>
+                </div>
+    
+                <ul id="nav" class="nav-menu">
+                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                    <li style="background: #30b5b2;"><a href="chocanh.html">CHÓ CẢNH</a></li>
+                    <li><a href="meocanh.html">MÈO CẢNH</a></li>
+                    <li class="food"><a href="doan.html">ĐỒ ĂN</a>
+                        <ul class="sub-menu">
+                            <li><a href="dogfood.html">ĐỒ ĂN CHO CHÓ</a></li>
+                            <li><a href="catfood.html">ĐỒ ĂN CHO MÈO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="phukien.html">PHỤ KIỆN</a></li>
+                    <li><a href="tintuc.html">TIN TỨC</a></li>
+                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+    
+                <ul id="search-btn">
+                    <li><button><i class='bx bx-search-alt'></i></button>
+                        <div class="find">
+                            <input type="text" placeholder="Tìm kiếm...">
+                            <a href=""><i class='bx bx-search-alt'></i></a>
+                        </div>
+                    </li>
+                    <li><button class="js-user"><i class='bx bxs-user' ></i></button></li>
+                    <li><button><i class='bx bxs-cart-add'></i></button></li>
+                </ul>
+            </div>
+        </div>
+        <!----Content---->
+        <div id="content">
+            <div class="hang content-section">
+                <div class="title-page">
+                    <div class="title">
+                        <a href="index.html">TRANG CHỦ</a>
+                        <span style="margin: 0 5px; color: rgba(102, 102, 102, 0.7)"> / </span>
+                        <b style="color: #353535;">CHÓ CẢNH</b>
+                    </div>
+                    <div class="title">
+                        <label for="dogs">Xem tất cả 9 kết quả</label>
+                        <select name="" id="dogs">
+                            <option value="first">Thứ tự mặc định</option>
+                            <option value="second">Thứ tự theo mức độ phổ biến</option>
+                            <option value="third">Thứ tự theo điểm đánh giá</option>
+                            <option value="fourth">Thứ tự theo sản phẩm mới</option>
+                            <option value="fifth">Thứ tự theo giá: thấp đến cao</option>
+                            <option value="sixth">Thứ tự theo giá: cao xuống thấp</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="hang content-section two-col">
+                    <div class="cot large-3">
+                        <div class="product-list">
+                            <b style="color: #353535;">DANH MỤC SẢN PHẨM</b>
+                            <div class="divider"></div>
+                            <ul>
+                                <li><a href="chocanh.html">Chó cảnh</a></li>
+                                <div class="sub-divider"></div>
+                                <li><a href="meocanh.html">Mèo cảnh</a></li>
+                            </ul>
+                        </div>
+                        <div class="product-list">
+                            <b style="color: #353535;">SẢN PHẨM</b>
+                            <div class="divider"></div>
+                            <ul class="nav-list">
+                                <li>
+                                    <div class="img">
+                                        <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/9-300x300.jpg" width="60" height="60" alt="">
+                                    </div>
+                                    <div class="desc-img">
+                                        <a href="#">Mèo Mỹ tai xoắn - American Curt</a>
+                                        <br>
+                                        <b>4,521,000 <u>đ</u></b>
+                                    </div>
+                                </li>
+                                <div class="sub-divider"></div>
+                                <li>
+                                    <div class="img">
+                                        <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/10-4-300x300.jpg" width="60" height="60" alt="">
+                                    </div>
+                                    <div class="desc-img">
+                                        <a href="#">Vòng cổ Ferplast Ergoflex 1.5/21-25cm(xám)</a>
+                                        <br>
+                                        <b>321,000 <u>đ</u></b>
+                                    </div>
+                                </li>
+                                <div class="sub-divider"></div>
+                                <li>
+                                    <div class="img">
+                                        <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/010-2-300x300.jpg" width="60" height="60" alt="">
+                                    </div>
+                                    <div class="desc-img">
+                                        <a href="#">Vòng cổ da Ferplast Natural 2.5/37-45cm(đen)</a>
+                                        <br>
+                                        <b>458,000 <u>đ</u></b>
+                                    </div>
+                                </li>
+                                <div class="sub-divider"></div>
+                                <li>
+                                    <div class="img">
+                                        <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/5-5-300x300.jpg" width="60" height="60" alt="">
+                                    </div>
+                                    <div class="desc-img">
+                                        <a href="#">Xương sữa Sleeky Chews Flouride 2pcs</a>
+                                        <br>
+                                        <b>60,000 <u>đ</u></b>
+                                    </div>
+                                </li>
+                                <div class="sub-divider"></div>
+                                <li>
+                                    <div class="img">
+                                        <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/6-4-600x600.jpg" width="60" height="60" alt="">
+                                    </div>
+                                    <div class="desc-img">
+                                        <a href="#">Snack Sleeky Chews Original các size</a>
+                                        <br>
+                                        <b>35,000 <u>đ</u></b>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cot large-9 container">
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/10-300x300.jpg" width="300" height="300" alt="">
+                                <button><i class='bx bxs-cart-add'></i></button>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">Chó Alaska</a>
+                                <p class="price">11,090,000 <u>đ</u></p>
+                            </div>
+                        </div>
+
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/1-1-300x300.jpg" width="300" height="300" alt="">
+                                <button><i class='bx bxs-cart-add'></i></button>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">Chó American Eskimo</a>
+                                <p class="price">14,289,000 <u>đ</u></p>
+                            </div>
+                        </div>
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/5-1-300x300.jpg" width="300" height="300" alt="">
+                                <button><i class='bx bxs-cart-add'></i></button>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">Chó Boston Terrier thuần chủng</a>
+                                <p class="price">10,650,000 <u>đ</u></p>
+                            </div>
+                        </div>
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/8-300x300.jpg" width="300" height="300" alt="">
+                                <button><i class='bx bxs-cart-add'></i></button>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">Chó Doberman Pinscher</a>
+                                <p class="price">8,875,000 <u>đ</u></p>
+                            </div>
+                        </div>
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/01-300x300.jpg" width="300" height="300" alt="">
+                                <button><i class='bx bxs-cart-add'></i></button>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">Chó Phú Quốc thuần chủng</a>
+                                <p class="price">5,050,000 <u>đ</u></p>
+                            </div>
+                        </div>
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/07-300x300.jpg" width="300" height="300" alt="">
+                                <button><i class='bx bxs-cart-add'></i></button>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">Chó American Bully</a>
+                                <p class="price">9,280,000 <u>đ</u></p>
+                            </div>
+                        </div>
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/011-300x300.jpg" width="300" height="300" alt="">
+                                <button><i class='bx bxs-cart-add'></i></button>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">Chó Becgie</a>
+                                <p class="price">3,900,000 <u>đ</u></p>
+                            </div>
+                        </div>
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="//mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/08-300x300.jpg" width="300" height="300" alt="">
+                                <button><i class='bx bxs-cart-add'></i></button>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">Đàn Bulldog Anh 4 tháng</a>
+                                <p class="price">8,562,000 <u>đ</u></p>
+                            </div>
+                        </div>
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/2-300x300.jpg" width="300" height="300" alt="">
+                                <button><i class='bx bxs-cart-add'></i></button>
+                            </div>
+                            <div class="text-desc">
+                                <p>CHÓ CẢNH</p>
+                                <a href="#" style="color: black;">Đàn Golden 4 tháng</a>
+                                <p class="price">5,500,000 <u>đ</u></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----About---->
+        <div class="about-section">
+            <div class="list container about">
+                <div class="w3 left">
+                    <h4>ĐIỀU HƯỚNG</h4>
+                    <ul>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="gioithieu.html">Về chúng tôi</a></li>
+                            <li><a href="chocanh.html">Chó cảnh</a></li>
+                            <li><a href="meocanh.html">Mèo cảnh</a></li>
+                            <li><a href="doan.html">Đồ ăn</a></li>
+                            <li><a href="phukien.html">Phụ kiện</a></li>
+                            <li><a href="tintuc.html">Tin tức</a></li>
+                            <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="divider-about"></div>
+                <div class="w4 mid">
+                    <div class="logo-about">
+                        <a href="#"><img width="150" height="50" src="http://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/logo-dogcat-blue.png" alt="dogcatshop"></a>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....</p>
+                        
+                    </div>
+                    <form action="">
+                        <input class="email-input" class="text" type="text" name="" id="" placeholder="Email ..." required>
+                        <input class="btn-input" type="submit" value="GỬI">
+                    </form>
+                </div>
+                <div class="divider-about"></div>
+                <div class="w3 right">
+                    <h4>THÔNG TIN LIÊN HỆ</h4>
+                    <ul>
+                        <li><i class='bx bxs-map'></i> 319 c16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</li>
+                        <li><i class='bx bxs-phone-call'></i> 0387455830</li>
+                        <li><i class='bx bxs-envelope' ></i>lddanh92tcv2017@
+                            gmail.com</li>
+                        <li><i class='bx bxl-facebook'></i><a href="https://www.facebook.com/duyanhdeptraiqua"></a>Le Duc Duy Anh</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal người dùng-->
+    <div class="modal js-modal">
+        <div class="form-box">
+            <div class="modal-container js-modal-container login-container" id="login">
+                <div class="modal-header">
+                    <h3>ĐĂNG NHẬP   </h3>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <label for="email" class="modal-label">
+                            <b>Địa chỉ email *</b>
+                        </label>
+                        <input id="email" type="text" class="modal-input" placeholder="abc@gmail.com" required>
+                    
+                        <label for="password" class="modal-label">
+                            <b>Mật khẩu *</b>
+                        </label>
+                        <input id="password" type="password" class="modal-input" placeholder="************" required>
+                        
+                        <input type="checkbox" name="" id="remember-password">
+                        <label for="remember-password">Nhớ mật khẩu</label>
+
+                        <div class="login-btn">
+                            <input class="buy-btn" type="submit" value="ĐĂNG NHẬP">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Bạn chưa có tài khoản? <a class="js-link" href="#" onclick="register()">Đăng ký</a></p>
+                    <a href="#" style="text-decoration:none;">Quên mật khẩu?</a>
+                </div>
+            </div>
+
+            <div class="modal-container js-modal-container register-container" id="register">
+                <div class="modal-header">
+                    <p>ĐĂNG KÝ</p>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="two-forms">
+                            <div class="name" style="padding-right: 10px;">
+                                <label for="lastname" class="modal-label">
+                                    <b>Họ *</b>
+                                </label>
+                                <input id="lastname" type="text" class="modal-input" placeholder="Nguyễn">
+                            </div>
+                            <div class="name">
+                                <label for="firstname" class="modal-label">
+                                    <b>Tên *</b>
+                                </label>
+                                <input id="firstname" type="text" class="modal-input" placeholder="Văn A">
+                            </div>
+                        </div>
+                        <label for="email" class="modal-label">
+                            <b>Địa chỉ email *</b>
+                        </label>
+                        <input id="email" type="text" class="modal-input" placeholder="abc@gmail.com">
+                    
+                        <label for="password" class="modal-label">
+                            <b>Mật khẩu *</b>
+                        </label>
+                        <input id="password" type="password" class="modal-input" placeholder="************">
+                        
+                        <div class="login-btn">
+                            <input class="buy-btn" type="submit" value="ĐĂNG KÝ">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Bạn đã có tài khoản? <a class="js-link" href="#" onclick="login()">Đăng nhập</a></p>
+                    <p class="modal-help">Need <a href="#">help?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/petshop.js"></script>
+</body>
+</html>

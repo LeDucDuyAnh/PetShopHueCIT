@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+    <script src="./vendo/fontawesome/js/all.js"></script>
+    <link rel="stylesheet" href="assets/css/tintuc.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="/HueCIT/images/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+    <div id="main">
+        <!----Header---->
+        <div id="header">
+            <div class="list">
+                <button class="menu-header">
+                    <i class='bx bx-menu' onclick="myMenuFunction()"></i>
+                </button>
+                <div class="header-logo">
+                    <a href="index.html"><img width="150" height="50" src="http://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/logo-dogcat-blue.png" alt="dogcatshop"></a>
+                </div>
+    
+                <ul id="nav" class="nav-menu">
+                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="chocanh.html">CHÓ CẢNH</a></li>
+                    <li><a href="meocanh.html">MÈO CẢNH</a></li>
+                    <li class="food"><a href="doan.html">ĐỒ ĂN</a>
+                        <ul class="sub-menu">
+                            <li><a href="dogfood.html">ĐỒ ĂN CHO CHÓ</a></li>
+                            <li><a href="catfood.html">ĐỒ ĂN CHO MÈO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="phukien.html">PHỤ KIỆN</a></li>
+                    <li style="background: #30b5b2;"><a href="tintuc.html">TIN TỨC</a></li>
+                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+    
+                <ul id="search-btn">
+                    <li><button><i class='bx bx-search-alt'></i></button>
+                        <div class="find">
+                            <input type="text" placeholder="Tìm kiếm...">
+                            <a href=""><i class='bx bx-search-alt'></i></a>
+                        </div>
+                    </li>
+                    <li><button class="js-user"><i class='bx bxs-user' ></i></button></li>
+                    <li><button><i class='bx bxs-cart-add'></i></button></li>
+                </ul>
+            </div>
+        </div>
+        <!----Content---->
+        <div id="content">
+            <div class="hang content-section">
+                <div class="title-page">
+                    <div class="title">
+                        <a href="index.html">TRANG CHỦ</a>
+                        <span style="margin: 0 5px; color: rgba(102, 102, 102, 0.7)"> / </span>
+                        <b>TIN TỨC</b>
+                    </div>
+                    <div class="title">
+                        <label for="dogs">Xem tất cả 9 kết quả</label>
+                    </div>
+                </div>
+
+                <div class="hang content-section two-col">
+                    <div class="cot large-3">
+                        <div class="product-list">
+                            <b style="color: #353535;">DANH MỤC SẢN PHẨM</b>
+                            <div class="divider"></div>
+                            <ul>
+                                <li><a href="chocanh.html">Chó cảnh</a></li>
+                                <div class="sub-divider"></div>
+                                <li><a href="meocanh.html">Mèo cảnh</a></li>
+                            </ul>
+                        </div>
+                        <div class="product-list">
+                            <b>SẢN PHẨM</b>
+                            <div class="divider"></div>
+                            <ul class="nav-list">
+                                <li>
+                                    <div class="img">
+                                        <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/04-3-300x300.jpg" width="60" height="60" alt="">
+                                    </div>
+                                    <div class="desc-img">
+                                        <a href="#">Thức ăn Iskhan cho mèo trưởng thành túi 2.5kg</a>
+                                        <br>
+                                        <b>480,000 <u>đ</u></b>
+                                    </div>
+                                </li>
+                                <div class="sub-divider"></div>
+                                <li>
+                                    <div class="img">
+                                        <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/8-5-300x300.jpg" width="60" height="60" alt="">
+                                    </div>
+                                    <div class="desc-img">
+                                        <a href="#">Royal Canin - Medium junior 4kg</a>
+                                        <br>
+                                        <b>530,000 <u>đ</u></b>
+                                    </div>
+                                </li>
+                                <div class="sub-divider"></div>
+                                <li>
+                                    <div class="img">
+                                        <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/7-5.jpg" width="60" height="60" alt="">
+                                    </div>
+                                    <div class="desc-img">
+                                        <a href="#">Bánh thưởng hình bóng AFP Krazy Crunch Size S 4x4x2cm</a>
+                                        <br>
+                                        <b>62,000 <u>đ</u></b>
+                                    </div>
+                                </li>
+                                <div class="sub-divider"></div>
+                                <li>
+                                    <div class="img">
+                                        <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/9-4-300x300.jpg" width="60" height="60" alt="">
+                                    </div>
+                                    <div class="desc-img">
+                                        <a href="#">SY - Bánh thưởng Steamed Bread</a>
+                                        <br>
+                                        <b>55,000 <u>đ</u></b>
+                                    </div>
+                                </li>
+                                <div class="sub-divider"></div>
+                                <li>
+                                    <div class="img">
+                                        <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/09-3-300x300.jpg" width="60" height="60" alt="">
+                                    </div>
+                                    <div class="desc-img">
+                                        <a href="#">Cỏ mèo tự trồng Hagen Catit</a>
+                                        <br>
+                                        <b>290,000 <u>đ</u></b>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cot large-9 container">
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/ECRANS-MARQUES-MS-p1413.jpg" width="300" height="300" alt="">
+                            </div>
+                            <div class="text-desc black-text">
+                                <h4>Duis luctus elit nisi, et cursus magna pellentesque non.</h4>
+                                <div class="divider"></div>
+                                <a href="#">Chế độ ăn cho chó con
+                                    Chó con từ 2 tháng tuổi đến 6 tháng tuổi cho ăn 3 bữa một ngày, thời gian chia đều trong ngày cho hợp lý. Các bữa ăn cần có một khoảng thời gian nhất định để cho chó tiêu hóa hết thức ăn (Không nhất thiết người ăn lúc nào thì cho chó ăn lúc đó, sẽ không hợp lý về thời gian).
+                                </a>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/banner-about001-300x150.jpg" width="300" height="300" alt="">
+                            </div>
+                            <div class="text-desc">
+                                <h4>Mauris tristique pretium tempus. Vestibulum et accumsan magna.</h4>
+                                <div class="divider"></div>
+                                <a href="#">
+                                    Tuổi thọ trung bình của mèo nếu sống trong nhà là 13 năm. Nhưng nếu mèo sống thả rông bên ngoài nhà thì tuổi thọ bị giảm mất 3 năm so với mèo sống trong nhà. Vì khi sống bên ngoài, chúng thường gặp phải các mối nguy hiểm hay bất lợi khác như môi trường ô nhiễm, có thể bị xe chẹt, bị chó hoặc các động vật hoang dã hay lũ mèo “du côn” khác bắt nạt và tấn công. Tất cả các yếu tố trên đều tiềm ẩn những nguy cơ gây bệnh và những rủi ro dẫn đến tử vong cho mèo.
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/https_2F2Fcdn.evbuc_.com2Fimages2F351569232F1585027677272F12Foriginal-300x150.jpg" width="300" height="300" alt="">
+                            </div>
+                            <div class="text-desc">
+                                <h4>Aliquam placerat nisl nec imperdiet vehicula. Phasellus tempus ligula id orci finibus feugiat.</h4>
+                                <div class="divider"></div>
+                                <a href="#">
+                                    Mọi người khi đi mua chó cần lưu ý, chỉ nên mua chó con từ 2 đến 2,5 tháng tuổi trở nên, như vậy mới đảm bảo về thể lực tối thiểu khi ta chăm sóc. Tốt nhất mua chó của chủ nuôi có chó mẹ ở nhà đẻ, hoặc trực tiếp nhập về có nguồn gốc, lý lịch rõ ràng. Đó là những chú chó nhanh nhẹn, khoẻ mạnh, có “sổ sức khoẻ” đi kèm dán tem các loại vaccin phòng dịch, ngày tẩy giun sán.
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/banner-Exotics002-300x150.jpg" width="300" height="300" alt="">
+                            </div>
+                            <div class="text-desc">
+                                <h4>In rutrum tempus purus, ut euismod dui facilisis ac. Fusce semper dignissim diam a egestas.</h4>
+                                <div class="divider"></div>
+                                <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, massa non viverra consequat, tellus ligula scelerisque nisi, at viverra erat risus ut orci. Morbi odio lacus, pellentesque ut tincidunt et, hendrerit sed nisi. Aliquam ac urna nisi. Pellentesque interdum libero id lectus venenatis sagittis. Nam ac gravida turpis. Aliquam diam lacus, rhoncus id eleifend in, ornare nec nunc. Curabitur eu ligula mauris. Nam eleifend ligula purus, nec facilisis mi commodo blandit. Pellentesque feugiat eros orci, ut rhoncus dolor vulputate sed. Donec nisi arcu, pulvinar ut sem in, eleifend fermentum sapien.
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/https_2F2Fcdn.evbuc_.com2Fimages2F351569232F1585027677272F12Foriginal-300x150.jpg" width="300" height="300" alt="">
+                            </div>
+                            <div class="text-desc">
+                                <h4>Donec tempus eu ligula sed blandit. Vivamus vel enim ac quam iaculis rutrum.</h4>
+                                <div class="divider"></div>
+                                <a href="#">
+                                    In rutrum tempus purus, ut euismod dui facilisis ac. Fusce semper dignissim diam a egestas. Aenean euismod mauris quis velit ullamcorper, nec interdum leo pellentesque. Fusce quis est eu est iaculis ultricies sit amet nec lacus. Ut egestas ex id lacus efficitur, eget semper sem suscipit. Morbi posuere sit amet ante at laoreet. Phasellus ornare facilisis nibh at bibendum. Maecenas nulla magna, tincidunt ac mollis eu, fringilla eu massa. Fusce diam libero, vehicula sit amet pharetra volutpat, molestie non ante. Sed vehicula dolor tellus, id bibendum magna molestie vitae. In nec tortor elementum, lacinia mauris eu, volutpat tellus.
+                            </div>
+                        </div>
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/ECRANS-MARQUES-MS-p1413.jpg" width="300" height="300" alt="">
+                            </div>
+                            <div class="text-desc">
+                                <h4>Duis luctus elit nisi, et cursus magna pellentesque non.</h4>
+                                <div class="divider"></div>
+                                <a href="#">Chế độ ăn cho chó con
+                                    Chó con từ 2 tháng tuổi đến 6 tháng tuổi cho ăn 3 bữa một ngày, thời gian chia đều trong ngày cho hợp lý. Các bữa ăn cần có một khoảng thời gian nhất định để cho chó tiêu hóa hết thức ăn (Không nhất thiết người ăn lúc nào thì cho chó ăn lúc đó, sẽ không hợp lý về thời gian).
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/banner-Exotics002-300x150.jpg" width="300" height="300" alt="">
+                            </div>
+                            <div class="text-desc">
+                                <h4>In rutrum tempus purus, ut euismod dui facilisis ac. Fusce semper dignissim diam a egestas.</h4>
+                                <div class="divider"></div>
+                                <a href="#">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, massa non viverra consequat, tellus ligula scelerisque nisi, at viverra erat risus ut orci. Morbi odio lacus, pellentesque ut tincidunt et, hendrerit sed nisi. Aliquam ac urna nisi. Pellentesque interdum libero id lectus venenatis sagittis. Nam ac gravida turpis. Aliquam diam lacus, rhoncus id eleifend in, ornare nec nunc. Curabitur eu ligula mauris. Nam eleifend ligula purus, nec facilisis mi commodo blandit. Pellentesque feugiat eros orci, ut rhoncus dolor vulputate sed. Donec nisi arcu, pulvinar ut sem in, eleifend fermentum sapien.
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/banner-about001-300x150.jpg" width="300" height="300" alt="">
+                            </div>
+                            <div class="text-desc">
+                                <h4>Mauris tristique pretium tempus. Vestibulum et accumsan magna.</h4>
+                                <div class="divider"></div>
+                                <a href="#"">
+                                    Tuổi thọ trung bình của mèo nếu sống trong nhà là 13 năm. Nhưng nếu mèo sống thả rông bên ngoài nhà thì tuổi thọ bị giảm mất 3 năm so với mèo sống trong nhà. Vì khi sống bên ngoài, chúng thường gặp phải các mối nguy hiểm hay bất lợi khác như môi trường ô nhiễm, có thể bị xe chẹt, bị chó hoặc các động vật hoang dã hay lũ mèo “du côn” khác bắt nạt và tấn công. Tất cả các yếu tố trên đều tiềm ẩn những nguy cơ gây bệnh và những rủi ro dẫn đến tử vong cho mèo.
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cot-third">
+                            <div class="anh">
+                                <img src="https://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/ECRANS-MARQUES-MS-p1413.jpg" width="300" height="300" alt="">
+                            </div>
+                            <div class="text-desc">
+                                <h4>Duis luctus elit nisi, et cursus magna pellentesque non.</h4>
+                                <div class="divider"></div>
+                                <a href="#">Chế độ ăn cho chó con
+                                    Chó con từ 2 tháng tuổi đến 6 tháng tuổi cho ăn 3 bữa một ngày, thời gian chia đều trong ngày cho hợp lý. Các bữa ăn cần có một khoảng thời gian nhất định để cho chó tiêu hóa hết thức ăn (Không nhất thiết người ăn lúc nào thì cho chó ăn lúc đó, sẽ không hợp lý về thời gian).
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----About---->
+        <div class="about-section">
+            <div class="list container about">
+                <div class="w3 left">
+                    <h4>ĐIỀU HƯỚNG</h4>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="gioithieu.html">Về chúng tôi</a></li>
+                            <li><a href="chocanh.html">Chó cảnh</a></li>
+                            <li><a href="meocanh.html">Mèo cảnh</a></li>
+                            <li><a href="doan.html">Đồ ăn</a></li>
+                            <li><a href="phukien.html">Phụ kiện</a></li>
+                            <li><a href="tintuc.html">Tin tức</a></li>
+                            <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="divider-about"></div>
+                <div class="w4 mid">
+                    <div class="logo-about">
+                        <a href="#"><img width="150" height="50" src="http://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/logo-dogcat-blue.png" alt="dogcatshop"></a>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....</p>
+                        
+                    </div>
+                    <form action="">
+                        <input class="email-input" class="text" type="text" name="" id="" placeholder="Email ..." required>
+                        <input class="btn-input" type="submit" value="GỬI">
+                    </form>
+                </div>
+                <div class="divider-about"></div>
+                <div class="w3 right">
+                    <h4>THÔNG TIN LIÊN HỆ</h4>
+                    <ul>
+                        <li><i class='bx bxs-map'></i> 319 c16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</li>
+                        <li><i class='bx bxs-phone-call'></i> 0387455830</li>
+                        <li><i class='bx bxs-envelope' ></i>lddanh92tcv2017
+                            @gmail.com</li>
+                        <li><i class='bx bxl-facebook'></i><a href="https://www.facebook.com/duyanhdeptraiqua"></a>Le Duc Duy Anh</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal người dùng-->
+    <div class="modal js-modal">
+        <div class="form-box">
+            <div class="modal-container js-modal-container login-container" id="login">
+                <div class="modal-header">
+                    <h3>ĐĂNG NHẬP</h3>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <label for="email" class="modal-label">
+                            <b>Địa chỉ email *</b>
+                        </label>
+                        <input id="email" type="text" class="modal-input" placeholder="abc@gmail.com" required>
+                    
+                        <label for="password" class="modal-label">
+                            <b>Mật khẩu *</b>
+                        </label>
+                        <input id="password" type="password" class="modal-input" placeholder="************" required>
+                        
+                        <input type="checkbox" name="" id="remember-password">
+                        <label for="remember-password">Nhớ mật khẩu</label>
+
+                        <div class="login-btn">
+                            <input class="buy-btn" type="submit" value="ĐĂNG NHẬP">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Bạn chưa có tài khoản? <a class="js-link" href="#" onclick="register()">Đăng ký</a></p>
+                    <a href="#" style="text-decoration:none;">Quên mật khẩu?</a>
+                </div>
+            </div>
+
+            <div class="modal-container js-modal-container register-container" id="register">
+                <div class="modal-header">
+                    <p>ĐĂNG KÝ</p>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="two-forms">
+                            <div class="name" style="padding-right: 10px;">
+                                <label for="lastname" class="modal-label">
+                                    <b>Họ *</b>
+                                </label>
+                                <input id="lastname" type="text" class="modal-input" placeholder="Nguyễn">
+                            </div>
+                            <div class="name">
+                                <label for="firstname" class="modal-label">
+                                    <b>Tên *</b>
+                                </label>
+                                <input id="firstname" type="text" class="modal-input" placeholder="Văn A">
+                            </div>
+                        </div>
+                        <label for="email" class="modal-label">
+                            <b>Địa chỉ email *</b>
+                        </label>
+                        <input id="email" type="text" class="modal-input" placeholder="abc@gmail.com">
+                    
+                        <label for="password" class="modal-label">
+                            <b>Mật khẩu *</b>
+                        </label>
+                        <input id="password" type="password" class="modal-input" placeholder="************">
+                        
+                        <div class="login-btn">
+                            <input class="buy-btn" type="submit" value="ĐĂNG KÝ">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Bạn đã có tài khoản? <a class="js-link" href="#" onclick="login()">Đăng nhập</a></p>
+                    <p class="modal-help">Need <a href="#">help?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        /*Hàm thay đổi tiêu đề khi Responsive*/
+        function myMenuFunction(){
+            var i = document.getElementById("nav");
+            if(i.className === "nav-menu"){
+                i.className += " responsive";
+            }
+            else{
+                i.className = "nav-menu";
+            }
+        }
+        
+        /* Modal đăng nhập */
+        const buyBtn = document.querySelector('.js-user')
+        const modal = document.querySelector('.js-modal')
+        const modalContainerS = document.querySelectorAll('.js-modal-container')
+        const links = document.querySelectorAll('.js-link')
+
+        function showBuyTicket(){
+            modal.classList.add('open')
+        }
+
+        function hideBuyTicket(){
+            modal.classList.remove('open')
+        }
+
+
+        buyBtn.addEventListener('click', showBuyTicket)
+        modal.addEventListener('click', hideBuyTicket)
+        for(const modalContainer of modalContainerS){
+            modalContainer.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
+        }
+        
+
+        for(const link of links){
+            link.addEventListener('click', showBuyTicket)
+        }
+        /*Lướt trái lướt phải của Đăng Ký và Đăng Nhập*/
+        var x = document.getElementById("login")
+        var y = document.getElementById("register")
+        function login(){
+            x.style.left = "0px";
+            y.style.right = "-2000px";
+        }
+        function register(){
+            x.style.left = "-2000px";
+            y.style.right = "0px";
+        }
+    </script>
+</body>
+</html>
